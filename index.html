@@ -11,29 +11,57 @@
       }
       #profile {
         position: absolute;
+        width: 30%;
+        height: auto;
+        text-align: center;
+      }
+      #profile-inner {
+        display: block;
         width: 200px;
+        margin: 10px auto;
         padding: 5px;
         border: 1px solid #666;
         border-radius: 5px;
         background-color: #ddd;
-        font-size:20px;
+        font-size:16px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 24px;
+        font-weight: 300;
+        line-height: 20px;
         color: #666;
       }
-      #profile * {
-        padding: inherit;
+      #profile-me span {
+        font-size:20px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+      #profile-me * {
         display: block;
         text-decoration: none;
         color: inherit;
+      }
+      #profile-inner a {
+        padding:0;
+        text-decoration: none;
+        color: inherit;
+      }
+      #content {
+        margin-left: 30%;
+        width: 70%;
       }
     </style>
   </head>
   <body>
     <div id="profile">
-      <img width="200" height="200" src="https://avatars3.githubusercontent.com/u/52346246" alt="profile picture">
-      <a href="https://github.com/jkeDev" target="_blank">jkeDev</a>
+      <div id="profile-inner">
+        <a id="profile-me" href="https://github.com/jkeDev" target="_blank">
+          <img width="200" height="200" src="https://avatars3.githubusercontent.com/u/52346246" alt="profile picture">
+          <span>jkeDev</span>
+        </a>
+        <span>I'm not part of a Company</span>
+      </div>
+    </div>
+    <div id="content">
+      <h1>Work in progress</h1>
     </div>
   </body>
 </html>
